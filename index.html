@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прогноз погоди</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 1rem;
+      width: 70%;
+      max-width: 400px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    #weatherResult {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    #weatherResult h2 {
+      margin: 0;
+    }
+
+    #weatherResult img {
+      max-width: 100px;
+      vertical-align: middle;
+    }
+
+    #weatherResult p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+<h1>Прогноз погоди</h1>
+<form id="weatherForm">
+  <input type="text" id="cityInput" placeholder="Введіть назву міста" required>
+  <button type="submit">Отримати погоду</button>
+</form>
+<div id="weatherResult"></div>
+
+<script src="weather.js"></script>
+</body>
+</html>
